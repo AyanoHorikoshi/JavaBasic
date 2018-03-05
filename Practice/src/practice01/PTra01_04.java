@@ -9,13 +9,13 @@ package practice01;
 public class PTra01_04 {
 	public static void main(String[] args) {
 
-		// ★ float型の変数 f を宣言してください
+		double PI; // ★ float型の変数 f を宣言してください
 
 
-		// ★ 変数 f に 3.14 を代入してください
+		PI=3.14;// f に 3.14 を代入してください
 
 
-		// ★ 変数 f を出力してください
+		System.out.println(PI);// ★ 変数 f を出力してください
 
 
 	}
