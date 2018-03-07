@@ -11,8 +11,18 @@ public class PTra02_06 {
 		int x = 10;
 		int y = 50;
 
+
 		System.out.println("x:" + x);
 		System.out.println("y:" + y);
+//		int z = 5;
+//		x*=z;
+//		y/=z;
+
+		int z = x;
+		x = y;
+		y = z;
+
+
 
 		// ★ 変数 x, y の値をリテラルの数字を使わずに入れ替えてください
 		// ※プログラムは何行書いても良いです
