@@ -25,9 +25,11 @@ public class PTra04_05 {
 			// コマンドプロンプトで入力した文字列が変数lineに代入されます
 			String line = scanner.nextLine();
 
+
 			// 文字列を数字に変換して、変数numに代入します
 			// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになり、プログラムが終了します
 			int myHand = Integer.parseInt(line);
+
 
 			System.out.print("相手の手は・・・・・");
 
@@ -44,23 +46,31 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
+
+
+
 			if (cpuHand == 0) {
 				System.out.println("グー！");
-
-
+				if(myHand == 2) {
+					winFlg = true;
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
-
-
+			}else if(myHand == 0) {
+				winFlg = true;
 
 			} else {
 				System.out.println("パー！！");
-
-
-
+			 if(myHand == 1) {
+				winFlg = true;}
 			}
 
-		}
+
+
+		System.out.println("プログラム終了します。");
+		System.out.println("おつかれさまでした。");
+
+			}
+}
 	}
 }

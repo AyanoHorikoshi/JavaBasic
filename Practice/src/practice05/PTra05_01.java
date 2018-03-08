@@ -9,7 +9,42 @@ package practice05;
 public class PTra05_01 {
 	public static void main(String[] args) {
 
+		int num;
+		num = 5;
 		// ★ int型の変数numを宣言し、5で初期化してください
+
+		switch (num) {
+
+		case 5:
+		System.out.println("満点");
+		break;
+
+		case 4:
+		System.out.println("合格点");
+		break;
+
+		case 3:
+		System.out.println("もう少しで合格");
+		break;
+
+		case 2:
+		System.out.println("不合格");
+		break;
+
+		case 1:
+		System.out.println("もう少しがんばりましょう");
+		break;
+
+		case 0:
+		System.out.println("前の単元を復習してください");
+		break;
+
+		default:
+		System.out.println("正しい数値を入れてください");
+		break;
+
+
+
 
 
 		/*
@@ -25,4 +60,5 @@ public class PTra05_01 {
 		 */
 
 	}
+}
 }

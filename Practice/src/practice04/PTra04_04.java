@@ -12,9 +12,13 @@ public class PTra04_04 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
+		int map;
+	    map = 100;
 		// ★ int型の変数mapを宣言して、100で初期化してください
 
 
+		int progress;
+		progress = 0;
 		// ★ int型の変数progressを宣言して、0で初期化してください
 
 
@@ -22,7 +26,7 @@ public class PTra04_04 {
 		System.out.println("=========< START >==========");
 
 		// ★ 変数progressが変数mapの数より少ない限り繰り返しを行う条件式を記述してください
-		while () {
+		while (progress <= map) {
 
 			System.out.println("サイコロを振ります。Enterを押してください");
 
@@ -34,10 +38,10 @@ public class PTra04_04 {
 			// 0～5にしかならないのでサイコロっぽくするには、+1を行います
 			dice = dice + 1;
 
-			// ★ サイコロを振って出た目を、変数progressに加算してください
+			progress = dice + progress;// ★ サイコロを振って出た目を、変数progressに加算してください
 
 
-			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
+			System.out.println("残り" + (map -progress) +"マス");// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
 
 		}
 
