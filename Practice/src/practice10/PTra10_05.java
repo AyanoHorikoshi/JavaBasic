@@ -43,6 +43,7 @@ public class PTra10_05 {
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
+		
 		int sum = 0;
 		int n = 0;
 		while(true) {
@@ -55,7 +56,6 @@ public class PTra10_05 {
 			}
 
 			sum += run;
-			System.out.println(sum);
 
 			if(distance < sum) {
 				System.out.println("目的地にまで" + n + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
