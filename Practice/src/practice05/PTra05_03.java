@@ -33,7 +33,7 @@ public class PTra05_03 {
 
 
 		// ★ 変数indexが5未満である間繰り返す条件式を記述してください
-		while (index<=5) {
+		while (index < 5) {
 
 			System.out.println((index + 1) + "人目");
 			System.out.println("山、川、海でどこに行きたいか入力してください。");
@@ -45,15 +45,15 @@ public class PTra05_03 {
 
 
 			case "山":
-			mountain = mountain+1;
+			mountain ++;
 			break;
 
 			case"川":
-			river = (river + 1);
+			river ++;
 			break;
 
 			case "海":
-			ocean = (ocean + 1);
+			ocean ++;
 			break;
 
 			default:
@@ -62,10 +62,7 @@ public class PTra05_03 {
 
 			}
 
-
-			index = index +1;
-
-
+			index ++;
 
 			System.out.println("山"+ mountain + "票");
 			System.out.println("川"+ river  + "票");
