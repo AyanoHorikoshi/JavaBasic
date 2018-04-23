@@ -17,14 +17,12 @@ public class PTra11_02 {
 		// ★ ユーザが入力した文字列が、本情報のタイトル一部に含まれていた場合は、その本情報を出力してください
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 		String line = scanner.nextLine();
-		
+
 		for(int i = 0; i < booklist.length; i ++) {
 			if(booklist[i].title.indexOf(line) != -1) {
 				System.out.println(booklist[i].dispBookInfo());
 			}
 		}
 
-
-		System.out.println();
 	}
 }

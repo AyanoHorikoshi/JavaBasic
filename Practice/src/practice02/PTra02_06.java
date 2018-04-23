@@ -14,9 +14,7 @@ public class PTra02_06 {
 
 		System.out.println("x:" + x);
 		System.out.println("y:" + y);
-//		int z = 5;
-//		x*=z;
-//		y/=z;
+
 
 		int z = x;
 		x = y;
